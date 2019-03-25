@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('delete ') {
       steps {
-        sh '/usr/local/bin/kubectl delete -f /Users/hombre/Desktop/docker/sjira/kjira/jira-service.yaml'
+        sh '/Data/jenkins/kubectl delete -f /Data/jenkins/jira-service.yaml'
       }
     }
   }
