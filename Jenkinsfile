@@ -1,9 +1,14 @@
 pipeline {
-  agent any
+  agent {
+    node {
+      label 'localhost'
+    }
+
+  }
   stages {
     stage('delete ') {
       steps {
-        sh 'kubectl delete -f /Users/hombre/Desktop/docker/sjira/kjira/jira-service.yaml'
+        sh 'kubectl delete -fÂ /Users/hombre/Desktop/docker/sjira/kjira/jira-service.yaml'
       }
     }
   }
